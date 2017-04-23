@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "twaambo\\silhouette\\": "src"
+            "Twaambo\\Silhouette\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "twaambo\\silhouette\\": "tests"
+            "Twaambo\\Silhouette\\": "tests"
         }
     },
     "scripts": {
