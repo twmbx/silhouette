@@ -1,9 +1,6 @@
-#
-[![Software License][ico-license]](LICENSE.md)
+# Silhouette
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
-
+A useful quick boilerplate on top of the default laravel auth scaffolding that allows users to manage their profile.
 
 ## Install
 
@@ -25,7 +22,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md)
 
 ## Credits
 
-- [][link-author]
+- [Twaambo Haamucenje][link-author]
 - [All Contributors][link-contributors]
 
 ## License
@@ -33,5 +30,4 @@ Please see [CONTRIBUTING](CONTRIBUTING.md)
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 [link-packagist]: https://packagist.org/packages//
-[link-author]: https://github.com/
-[link-contributors]: ../../contributors
+[link-author]: https://github.com/twoseats
