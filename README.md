@@ -2,12 +2,14 @@
 
  A useful quick boilerplate on top of the default laravel auth scaffolding that allows users to manage their profile.
 
+# :construction:  WORK IN PROGRESS :construction:
+
 ## Install
 
 Via Composer
 
 ``` bash
-$ composer require /
+
 ```
 
 ## Usage
@@ -19,11 +21,6 @@ $ composer require /
 ## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md)
-
-## Credits
-
-- [Twaambo Haamucenje][link-author]
-- [All Contributors][link-contributors]
 
 ## License
 
