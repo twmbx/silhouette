@@ -1,7 +1,7 @@
 {
     "name": "twaambo/silhouette",
     "type": "library",
-    "description": "Quick frontend profile page for Laravel buildin on the default Laravel 5.4 Authentication scaffolding.",
+    "description": "Quick frontend profile page for Laravel building on the default Laravel 5.4 Authentication scaffolding.",
     "keywords": [
         "laravel",
         "profile",
