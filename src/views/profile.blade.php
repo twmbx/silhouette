@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-9 profile">
             <h3>Profile Information</h3>
-            
+
             <form class="form-horizontal" method="POST" action="{{ route('profile') }}">
                  {{ csrf_field() }}
                  @if (isset($errors) && count($errors) > 0)
@@ -23,7 +23,13 @@
                 <div class="form-group">
                     <label class="col-lg-3 control-label">Name:</label>
                     <div class="col-lg-8">
-                        <input class="form-control" type="text" value="{{$user->name}}" name="name">
+                        <input class="form-control" type="text" value="{{ old('user',$user->name) }}" name="name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Email:</label>
+                    <div class="col-lg-8">
+                        <input class="form-control" type="email" value="{{ old('email',$user->email) }}" name="name">
                     </div>
                 </div>
                 <div class="form-group">

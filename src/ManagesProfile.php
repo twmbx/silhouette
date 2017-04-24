@@ -2,46 +2,54 @@
 
 namespace Twaambo\Silhouette;
 
-use App\User;
 use App\Http\Controllers\Controller;
 use Auth;
 use Session;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Validator;
+use Illuminate\Validation\Rule;
 
 trait ManagesProfile
 {
     public function viewUserProfile(Request $request)
     {
         $user = Auth::user();
-        return view('silhouette::profile', ['user' => $user]) ;
+        return view('silhouette::profile', ['user' => $user]);
     }
 
     /**
      * Validate and save.
      * @param Request $request
      */
-    public function editCurrentUserProfile(Request $request)
+    public function editUserProfile(Request $request)
     {
         $user = Auth::user();
 
-        if ($request["name"]) {
-            $this->validate($request, [
-                'name' => 'max:255|required'
-            ]);
+        $this->validate($request, [
+            'name' => 'required|string|max:255',
+            'email' => ['required|string|email|max:255', Rule::unique('users')->ignore($user->id)],
+            'password' => 'min:6|string|confirmed|nullable'
+        ]);
+
+        if ( $request["name"] ) {
             $user->name = $request["name"];
         }
 
-        if ($request["password"]) {
-            $this->validate($request, [
-                'password' => 'min:8|required'
-            ]);
+        if ( $request["email"] ) {
+            $user->email = $request["email"];
+        }
+
+        if ( $request["password"] ) {
             $user->password = bcrypt($request["password"]);
         }
 
-        $user->save(); 
+        if( $user->isDirty() ) {
+            $user->save();
+            Session::flash('message', "Profile Successfully Updated!");
+        } else {
+            Session::flash('message', "No changes made to profile.");
+        }
 
-        Session::flash('message', "Profile Successfully Updated!");
         return redirect()->back();
     }
 }
