@@ -5,7 +5,7 @@
 # :construction:  WORK IN PROGRESS :construction:
 
 ## Requirements
-Basic Laravel 5.x install.
+Basic Laravel 5.4 install.
 Auth scaffolding & a user to login as.
 
 ## Install
