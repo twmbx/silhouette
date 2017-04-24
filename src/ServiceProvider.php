@@ -4,7 +4,7 @@ namespace Twaambo\Silhouette;
 
 use Illuminate\Support\ServiceProvider;
 
-class SilhouetteServiceProvider extends ServiceProvider
+class ServiceProvider extends ServiceProvider
 {
     public function boot()
     {
