@@ -4,18 +4,40 @@
 
 # :construction:  WORK IN PROGRESS :construction:
 
+## Requirements
+Basic Laravel 5.x install.
+Auth scaffolding & a user to login as.
+
 ## Install
+First you will need to have installed the default Laravel Auth scaffolding.
 
-Via Composer
-
+Instructions can be found [here](https://laravel.com/docs/5.4/authentication#authentication-quickstart), but basically:
 ``` bash
-
+artisan make:auth
 ```
 
-## Usage
+Now you can install using Composer
+``` bash
+composer require twaambo/silhouette
+```
 
-``` php
+Add the service provider to your the providers array in `config/app.php`
+```php
+Twaambo\Silhouette\ServiceProvider::class,
+```
 
+Publish package assets to get 
+ - a ProfileController.php in `app/Http/Controllers/Auth/`
+ - a profile.blade.php in `resources/views/vendor/silhouette/`
+``` bash
+artisan vendor:publish
+```
+You can customise the view as needed and use the ProfileController to add your own functionality.
+
+
+In your `resources/views/layouts/app.blade.php` find  `<a href="{{ route('logout') }}"` and add the following above it:
+```html
+<a href="{{ route('profile') }}">Profile</a>
 ```
 
 ## Contributing
