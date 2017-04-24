@@ -1,6 +1,6 @@
 # :bust_in_silhouette: Silhouette
 
- A useful quick boilerplate on top of the default laravel auth scaffolding that allows users to manage their profile.
+ A useful quick boilerplate on top of the default laravel auth scaffolding that provides an interface for users to manage their profile.
 
 # :construction:  WORK IN PROGRESS :construction:
 
