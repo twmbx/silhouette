@@ -29,7 +29,7 @@
                 <div class="form-group">
                     <label class="col-lg-3 control-label">Email:</label>
                     <div class="col-lg-8">
-                        <input class="form-control" type="email" value="{{ old('email',$user->email) }}" name="name">
+                        <input class="form-control" type="email" value="{{ old('email',$user->email) }}" name="email">
                     </div>
                 </div>
                 <div class="form-group">

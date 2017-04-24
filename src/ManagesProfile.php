@@ -27,7 +27,7 @@ trait ManagesProfile
 
         $this->validate($request, [
             'name' => 'required|string|max:255',
-            'email' => ['required|string|email|max:255', Rule::unique('users')->ignore($user->id)],
+            'email' => 'required|string|email|max:255',
             'password' => 'min:6|string|confirmed|nullable'
         ]);
 
