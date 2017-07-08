@@ -2,8 +2,6 @@
 
  A useful quick boilerplate on top of the default laravel auth scaffolding that provides an interface for users to manage their profile.
 
-# :construction:  WORK IN PROGRESS :construction:
-
 ## Requirements
 Basic Laravel 5.4 install.
 Auth scaffolding & a user to login as.
