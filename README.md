@@ -16,7 +16,7 @@ artisan make:auth
 
 Now you can install using Composer
 ``` bash
-composer require twmbx/silhouette
+composer require twmbx/silhouette dev-master
 ```
 
 If you're on Laravel 5.4:
