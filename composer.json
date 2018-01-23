@@ -1,15 +1,14 @@
 {
     "name": "twaambo/silhouette",
     "type": "library",
-    "description": "Quick frontend profile page for Laravel building on the default Laravel 5.4 Authentication scaffolding.",
+    "description": "Quick frontend profile page for Laravel building on the default Laravel 5.4^ Authentication scaffolding.",
     "keywords": [
         "laravel",
         "profile",
         "user",
-        "twaambo",
         "silhouette"
     ],
-    "homepage": "https://github.com/twoseats/silhouette",
+    "homepage": "https://github.com/twmbx/silhouette",
     "license": "MIT",
     "authors": [
         {
@@ -43,6 +42,12 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Twaambo\\Silhouette\\ServiceProvider"
+            ],
+            "aliases": {}
         }
     },
     "config": {
