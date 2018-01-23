@@ -6,7 +6,7 @@
         <div class="col-md-9 profile">
             <h3>Profile Information</h3>
 
-            <form class="form-horizontal" method="POST" action="{{ route('profile') }}">
+            <form class="form-horizontal" method="POST" action="{{ route('profile.edit') }}">
                  {{ csrf_field() }}
                  @if (isset($errors) && count($errors) > 0)
                     <div class="alert alert-danger">
