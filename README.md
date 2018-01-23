@@ -16,13 +16,13 @@ artisan make:auth
 
 Now you can install using Composer
 ``` bash
-composer require twaambo/silhouette
+composer require twmbx/silhouette
 ```
 
 If you're on Laravel 5.4:
 Add the service provider to your the providers array in `config/app.php`
 ``` php
-Twaambo\Silhouette\ServiceProvider::class,
+Twmbx\Silhouette\ServiceProvider::class,
 ```
 
 Publish package assets to get 
