@@ -1,6 +1,6 @@
 <?php
 
-namespace Twaambo\Silhouette;
+namespace Twmbx\Silhouette;
 
 use App\Http\Controllers\Controller;
 use Auth;

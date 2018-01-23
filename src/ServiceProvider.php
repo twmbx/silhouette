@@ -1,6 +1,6 @@
 <?php
 
-namespace Twaambo\Silhouette;
+namespace Twmbx\Silhouette;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {

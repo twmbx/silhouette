@@ -1,5 +1,5 @@
 {
-    "name": "twaambo/silhouette",
+    "name": "twmbx/silhouette",
     "type": "library",
     "description": "Quick frontend profile page for Laravel building on the default Laravel 5.4^ Authentication scaffolding.",
     "keywords": [
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Twaambo\\Silhouette\\": "src"
+            "Twmbx\\Silhouette\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Twaambo\\Silhouette\\": "tests"
+            "Twmbx\\Silhouette\\": "tests"
         }
     },
     "scripts": {
@@ -45,7 +45,7 @@
         },
         "laravel": {
             "providers": [
-                "Twaambo\\Silhouette\\ServiceProvider"
+                "Twmbx\\Silhouette\\ServiceProvider"
             ],
             "aliases": {}
         }

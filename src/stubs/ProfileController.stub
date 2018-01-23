@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
-use Twaambo\Silhouette\ManagesProfile;
+use Twmbx\Silhouette\ManagesProfile;
 use App\Http\Controllers\Controller;
 
 class ProfileController extends Controller
