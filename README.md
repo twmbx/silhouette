@@ -3,7 +3,7 @@
  A useful quick boilerplate on top of the default laravel auth scaffolding that provides an interface for users to manage their profile.
 
 ## Requirements
-Basic Laravel 5.4 install.
+Basic Laravel 5.4 or 5.5 install.
 Auth scaffolding & a user to login as.
 
 ## Install
@@ -19,8 +19,9 @@ Now you can install using Composer
 composer require twaambo/silhouette
 ```
 
+If you're on Laravel 5.4:
 Add the service provider to your the providers array in `config/app.php`
-```php
+``` php
 Twaambo\Silhouette\ServiceProvider::class,
 ```
 
@@ -34,7 +35,7 @@ You can customise the view as needed and use the ProfileController to add your o
 
 
 In your `resources/views/layouts/app.blade.php` find  `<a href="{{ route('logout') }}"` and add the following above it:
-```html
+``` html
 <a href="{{ route('profile') }}">Profile</a>
 ```
 
