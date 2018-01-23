@@ -36,7 +36,7 @@ You can customise the view as needed and use the ProfileController to add your o
 
 In your `resources/views/layouts/app.blade.php` find  `<a href="{{ route('logout') }}"` and add the following above it:
 ``` html
-<a href="{{ route('view-profile') }}">Profile</a>
+<a href="{{ route('profile.view') }}">Profile</a>
 ```
 
 ## Contributing
