@@ -40,6 +40,9 @@ In your `resources/views/layouts/app.blade.php` find  `<a href="{{ route('logout
 <a href="{{ route('profile.view') }}">Profile</a>
 ```
 
+## Screenshot
+![Screenshot](./res/screenshot.png)
+
 ## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md)
