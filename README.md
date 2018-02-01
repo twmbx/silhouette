@@ -3,7 +3,7 @@
  A useful quick boilerplate on top of the default laravel auth scaffolding that provides an interface for users to manage their profile.
 
 ## Requirements
-Basic Laravel 5.4 or 5.5 install.
+Basic install of Laravel 5.4 and up.
 Auth scaffolding & a user to login as.
 
 ## Install
@@ -12,6 +12,7 @@ First you will need to have installed the default Laravel Auth scaffolding.
 Instructions can be found [here](https://laravel.com/docs/5.4/authentication#authentication-quickstart), but basically:
 ``` bash
 artisan make:auth
+artisan migrate
 ```
 
 Now you can install using Composer
@@ -25,7 +26,7 @@ Add the service provider to your the providers array in `config/app.php`
 Twmbx\Silhouette\ServiceProvider::class,
 ```
 
-Publish package assets to get 
+Publish package assets to get
  - a ProfileController.php in `app/Http/Controllers/Auth/`
  - a profile.blade.php in `resources/views/vendor/silhouette/`
 ``` bash
