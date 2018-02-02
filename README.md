@@ -51,7 +51,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md)
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[link-packagist]: https://packagist.org/packages//
+[link-packagist]: https://packagist.org/packages/twmbx/silhouette
 [link-author]: https://github.com/twmbx
 
 Made with :heart: in :zambia:
