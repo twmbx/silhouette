@@ -1,4 +1,9 @@
-# :bust_in_silhouette: Silhouette
+# ⛔ ABANDONED
+
+This project answered a need I had many moons ago for a version of Laravel long gone.<br>
+Times have changed. Please consider using [Jetstream](https://github.com/laravel/jetstream).
+
+## :bust_in_silhouette: Silhouette
 
  A useful quick boilerplate on top of the default laravel auth scaffolding that provides an interface for users to manage their profile.
 
